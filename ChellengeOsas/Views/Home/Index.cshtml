@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<!-- Exibir os dados JSON -->
+<div id="jsonData">
+    @Html.Raw(ViewBag.JsonData)
+</div>
+<!-- HTML -->
+<table id="table"></table>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modalData"></div>
+    </div>
+</div>
+
+
+

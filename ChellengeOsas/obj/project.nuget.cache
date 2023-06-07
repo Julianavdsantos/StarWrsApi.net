@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "QhApj8z0QgmfPalSqapk1u9sXfpRvgXYl0ElPfO8kSk6HI2q3VP2Ntraao1KPV5P+PpXr+Ez8xMnEh5kkOL9Ow==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\juliana.santos\\source\\repos\\ChellengeOsas\\ChellengeOsas\\ChellengeOsas.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\juliana.santos\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
