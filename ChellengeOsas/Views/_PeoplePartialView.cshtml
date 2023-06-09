@@ -1,0 +1,27 @@
+
+@model List<ChellengeOsas.Models.Peoples>
+<table>
+    <thead>
+        <tr>
+            <th>Nomes</th>
+            <th>Height</th>
+            <th>Birth</th>
+            <th>Gender</th>
+
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+
+            <tr>
+                <td>@item.Gender</td>
+                <td>@item.Height</td>
+                <td>@item.Birth</td>
+                <td>@item.Gender</td>
+
+            </tr>
+        }
+    </tbody>
+</table>
