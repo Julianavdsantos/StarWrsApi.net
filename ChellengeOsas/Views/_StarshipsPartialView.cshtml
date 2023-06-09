@@ -1,0 +1,26 @@
+@model List<ChellengeOsas.Models.Starships>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Modal</th>
+            <th>Length</th>
+            <th>Passengers</th>
+
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Model</td>
+                <td>@item.Length</td>
+                <td>@item.Passengers</td>
+
+            </tr>
+        }
+    </tbody>
+</table>
