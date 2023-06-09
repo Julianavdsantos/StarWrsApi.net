@@ -6,92 +6,36 @@
     ViewBag.Title = "Home Page";
 }
 
+<!-- Exibir os dados JSON -->
 <div id="jsonData">
     @Html.Raw(ViewBag.JsonData)
 </div>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="starWars.css">
-</head>
-<body>
 
-    <header class="navbar navbar-expand-lg ">
-        <div class="container">
-            <a class="logo" href="#">StarWars</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a id="films-link" class="nav-link" href="#">Films</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="people-link" class="nav-link" href="#">People</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="planets-link" class="nav-link" href="#">Planets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="species-link" class="nav-link" href="#">Species</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="starships-link" class="nav-link" href="#">Starships</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="vehicles-link" class="nav-link" href="#">Vehicles</a>
-                    </li>
-                </ul>
+<div id="content"></div> <!---recebe a table--->
 
 
 
-
-            </div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Vehicle Details</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="vehicleDetails">
+          
         </div>
-    </header>
-
-    <div class="crawl-container">
-        <div class="crawl-text">
-            <p>A long time ago in a galaxy far, far away...</p>
-        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
     </div>
+  </div>
+</div>
 
-    <section class="py-5">
-        <div class="container">
-            <table id="data-table" class="table">
-                <thead>
-                    <tr>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-        </div>
-    </section>
-
-    <!-- Modal -->
-    <div class="modal fade" id="details-modal" tabindex="-5" role="dialog" aria-labelledby="details-modal-label" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="details-modal-label">Detalhes</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div id="details-content"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</body>
-</html>
 
 
