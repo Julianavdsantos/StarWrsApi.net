@@ -1,0 +1,26 @@
+@model List<ChellengeOsas.Models.Species>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Classification</th>
+            <th>Height</th>
+            <th>Colors</th>
+
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Classification</td>
+                <td>@item.Height</td>
+                <td>@item.Colors</td>
+
+            </tr>
+        }
+    </tbody>
+</table>
