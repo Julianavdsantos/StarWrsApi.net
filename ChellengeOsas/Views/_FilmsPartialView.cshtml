@@ -1,0 +1,27 @@
+@model List<ChellengeOsas.Models.Films>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Length</th>
+            <th>Passengers</th>
+
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+
+            <tr>
+                <td>@item.Title</td>
+                <td>@item.Model</td>
+                <td>@item.Length</td>
+                <td>@item.Passengers</td>
+               
+            </tr>
+        }
+    </tbody>
+</table>
