@@ -1,0 +1,26 @@
+@model List<ChellengeOsas.Models.Planets>
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Rotation</th>
+            <th>Gravity</th>
+            <th>Population</th>
+
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+
+            <tr>
+                <td>@item.Nome</td>
+                <td>@item.Rotation</td>
+                <td>@item.Gravity</td>
+                <td>@item.Population</td>
+
+            </tr>
+        }
+    </tbody>
+</table>
